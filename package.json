@@ -1,6 +1,6 @@
 {
   "name": "taro_dva_cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "taro_dava_cli命令行脚本工具",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,13 @@
   "bin": {
     "tdc": "bin/index.js"
   },
-  "keywords": ["taro", "cli", "dva", "taro_cli", "taro_dva_cli"],
+  "keywords": [
+    "taro",
+    "cli",
+    "dva",
+    "taro_cli",
+    "taro_dva_cli"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
