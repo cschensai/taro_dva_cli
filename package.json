@@ -9,7 +9,7 @@
   "bin": {
     "tdc": "bin/index.js"
   },
-  "keywords": [],
+  "keywords": ["taro", "cli", "dva", "taro_cli", "taro_dva_cli"],
   "author": "",
   "license": "ISC",
   "dependencies": {
