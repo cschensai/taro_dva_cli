@@ -1,6 +1,6 @@
 {
   "name": "taro_dva_cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "taro_dva_cli命令行脚本工具",
   "main": "index.js",
   "scripts": {
