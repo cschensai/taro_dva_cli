@@ -4,9 +4,8 @@ const program = require('commander');
 const chalk = require('chalk');
 const ora = require('ora');
 const download = require('download-git-repo');
-const symbols = require('log-symbols');
 const inquirer = require('inquirer');
-
+const fs = require('fs');
 
 program
   .version(require('../package.json').version, '-v', '--version')
@@ -17,6 +16,14 @@ program
     const projectName = process.argv[3];
     if (!projectName) {
       console.log(chalk.bgRed('请输入目录名称，如：tdc init test'));
+      return false;
+    }
+    // 检索本地是否存在同名的文件目录
+    const currDir = process.cwd();
+    const fileList = fs.readdirSync(currDir);
+    const isRepeatDir = fileList.find(file => fs.statSync(`${currDir}/${file}`).isDirectory() && file === projectName);
+    if (isRepeatDir) {
+      console.log(chalk.red(`🙅‍♂️ 存在同名目录 ${projectName}，请重新选择目录.`));
       return false;
     }
     const question = [{
