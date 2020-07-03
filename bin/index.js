@@ -37,7 +37,7 @@ program
       branchName = 'master';
     }
     // 已经输入了目录名
-    const spinner = ora(chalk.grey('正在远程拉取模版，客官请稍等...'));
+    const spinner = ora(chalk.grey('正在远程拉取项目，客官请稍等...'));
     spinner.start();
     // 远程库
     const url = `https://github.com:cschensai/xcx_taro_dva#${branchName}`;
