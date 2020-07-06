@@ -1,5 +1,9 @@
 ####
-> 基于taro Version: 3.0.0-beta.5，搭配dva数据流管理，自动化业务模板，集成的脚手架
+> 1. 基于taro Version: 3.0.0-beta.5
+> 2. 搭配dva数据流管理
+> 3. 自动化业务模板
+> 4. 集成的taro-ui 3.0.0-alpha.2
+> 5. scss模版
 #### 安装
 ```
   npm i taro_dva_cli -g
